@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    background-color: #F7F7F7;
 }
 
 /* NAV BAR */
@@ -13,8 +14,9 @@ nav {
 }
 
 nav p {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 1.5rem;
+    color: #444444;
 }
 
 ul {
@@ -42,7 +44,7 @@ ul li a::after {
     transform: translateX(-50%);
     width: 0;
     height: 2px;
-    background-color: black;
+    background-color: #20B2AA;
     transition: width 0.4s ease;
 }
 
@@ -51,5 +53,5 @@ ul li a:hover::after {
 }
 
 ul li a:visited {
-    color: black;
+    color: #444444;
 }
