@@ -4,6 +4,7 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: #F7F7F7;
+    color: #444444;
 }
 
 /* NAV BAR */
@@ -16,7 +17,6 @@ nav {
 nav p {
     font-weight: 700;
     font-size: 1.5rem;
-    color: #444444;
 }
 
 ul {
@@ -54,4 +54,45 @@ ul li a:hover::after {
 
 ul li a:visited {
     color: #444444;
+}
+
+/* ABOUT ME */
+#about-me {
+    text-align: center;
+}
+
+#title {
+    font-size: 3rem;
+    margin: 5rem 0;
+}
+
+#name {
+    color: #20B2AA;
+}
+
+.coder-img {
+    border-radius: 50%;
+    height: auto;
+    width: 20%;
+    max-width: 70rem;
+    max-height: 70rem;
+    margin-bottom: 2rem;
+}
+
+.intro, .hobbies {
+    font-size: 1.5rem;
+    max-width: 50%;
+    margin: auto;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+#college {
+    color: #003D73;
+    font-weight: 500;
+}
+
+.language {
+    color: #20B2AA;
+    font-weight: 500;
 }
