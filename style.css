@@ -8,6 +8,12 @@
 }
 
 /* NAV BAR */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -59,6 +65,7 @@ ul li a:visited {
 /* ABOUT ME */
 #about-me {
     text-align: center;
+    margin-bottom: 10rem;
 }
 
 #title {
@@ -95,4 +102,46 @@ ul li a:visited {
 .language {
     color: #20B2AA;
     font-weight: 500;
+}
+
+/* PROJECTS */
+.projects-header {
+    color: #20B2AA;
+    text-align: center;
+    font-size: 2.5rem;
+    position: relative;
+    padding-bottom: 1.5rem;
+    
+}
+
+.projects-header::after {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    border-bottom: 2px solid #20B2AA;
+}
+
+.projects-container {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.todo-list, .rosebuds, .pianokeys {
+    border: 1px solid green;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4rem;
+
+    margin-bottom: 30rem;
+}
+
+.todo-img, .rosebuds-img, .piano-img {
+    width: 10rem;
 }
