@@ -108,6 +108,12 @@ ul li a:visited {
     font-weight: 500;
 }
 
+#school {
+    color: #003D73;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
 .language {
     color: #20B2AA;
     font-weight: 500;
