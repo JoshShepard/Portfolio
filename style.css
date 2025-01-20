@@ -11,8 +11,9 @@
 header {
     position: fixed;
     top: 0;
+    padding: 1.5rem;
     width: 100%;
-    height: 4.5rem;
+    height: auto;
     background-color: #444444;
     z-index: 1000;
 }
@@ -20,7 +21,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    padding-top: 1.5rem;
+    /* padding-top: 1.5rem; */
     background-color: #444444;
 }
 
@@ -270,7 +271,6 @@ form {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Form input styling */
 .contactForm {
     display: flex;
     flex-direction: column;
@@ -331,22 +331,177 @@ button i {
     background-color: #20B2AA;
 }
 
-/* Mobile Responsiveness
-@media (max-width: 768px) {
-    form {
-        width: 90%; More space on smaller screens 
-        padding: 2rem;
+@media screen and (max-width: 953px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .contact-header {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    ul li {
+        margin: 1rem 0;
+        padding: 0;
+    }
+
+    nav p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    ul li {
+        margin: 1rem 0;
+        padding: 0;
+    }
+
+    nav p {
+        display: none;
+    }
+
+    #about-me {
+        padding-top: 16rem;
+        margin-bottom: 5rem;
+    }
+
+    #title {
+        font-size: 2.5rem;
+    }
+
+    #projects {
+        padding-top: 20rem;
+    }
+
+    #skills {
+        padding-top: 8rem;
+    }
+
+    #contact-me {
+        padding-top: 20rem;
+    }
+
+    .coder-img {
+        width: 50%;
+        max-width: 30rem;
+    }
+
+    .intro, .hobbies {
+        font-size: 1.2rem;
+        max-width: 90%;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .todo-list, .rosebuds, .pianokeys {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .skills {
+        /* flex-direction: column; */
+        font-size: 4rem;
+        
+    }
+
+    .contactForm input,
+    .contactForm textarea {
+        width: 100%;
+    }
+}
+
+/* MEDIA QUERIES MOBILE */
+@media screen and (max-width: 480px) {
+    nav {
+        padding-top: 1rem;
+    }
+
+    nav p {
+        font-size: 1.2rem;
+    }
+
+    ul li {
+        margin: 0.5rem 0;
+    }
+
+    #about-me {
+        padding-top: 14rem;
+        margin-bottom: 1rem;
+    }
+
+    #title {
         font-size: 2rem;
     }
 
-    button {
+    .coder-img {
+        width: 60%;
+        max-width: 20rem;
+    }
+
+    .intro, .hobbies {
         font-size: 1rem;
-        padding: 0.8rem 1.5rem;
+        max-width: 95%;
+        line-height: 2;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .todo-list, .rosebuds, .pianokeys {
+        width: 90%;
+        padding: 2rem;
+        margin-bottom: 3rem;
+        height: auto;
+    }
+
+    .todo-list .project-description,
+    .rosebuds .project-description,
+    .pianokeys .project-description {
+        word-wrap: break-word; /* Ensure long words break and don't overflow */
+        overflow: hidden; /* Prevent overflow */
+    }
+
+    
+
+    .skills {
+        font-size: 3rem;
+    }
+
+    .form-container {
+        padding: 0 1rem;
+    }
+
+    form {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .contactForm input,
+    .contactForm textarea {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 1rem 0;
     }
 }
-*/
-
-
