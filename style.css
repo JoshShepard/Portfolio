@@ -331,6 +331,20 @@ button i {
     background-color: #20B2AA;
 }
 
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1290px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .todo-list, .rosebuds, .pianokeys {
+        width: 80%; 
+        margin-bottom: 2rem;
+    }
+}
+
 @media screen and (max-width: 953px) {
     nav {
         flex-direction: column;
