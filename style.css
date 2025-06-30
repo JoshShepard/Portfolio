@@ -109,6 +109,23 @@ ul li a:visited {
     margin-bottom: 2rem;
 }
 
+.resume-link {
+    color: #20B2AA;
+    font-weight: 600;
+    padding: 0.5rem 0.75rem;
+    border: 2px solid #20B2AA;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.resume-link:hover {
+    background-color: #20B2AA;
+    color: white;
+    text-decoration: none;
+}
+
+
 #college {
     color: #003D73;
     font-weight: 500;
@@ -160,7 +177,7 @@ ul li a:visited {
     transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
-.todo-list, .rosebuds, .pianokeys {
+.todo-list, .anime-tracker, .weather-app {
     font-size: 1.25rem;
     height: auto;
     padding: 2rem;
@@ -175,12 +192,12 @@ ul li a:visited {
     margin-bottom: 2rem;
 }
 
-.todo-list:hover, .rosebuds:hover, .pianokeys:hover {
+.todo-list:hover, .anime-tracker:hover, .weather-app:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
-.todo-img, .rosebuds-img, .piano-img {
+.todo-img, .anime-tracker-img, .weather-img {
     width: 10rem;
     height: auto;
 }
@@ -335,7 +352,7 @@ button i {
 /* MEDIA QUERIES */
 @media screen and (max-width: 1290px) {
     #about-me {
-        padding-top: 16rem;
+        padding-top: 17rem;
         margin-bottom: 5rem;
     }
 
@@ -356,7 +373,7 @@ button i {
         align-items: center;
     }
 
-    .todo-list, .rosebuds, .pianokeys {
+    .todo-list, .anime-tracker, .weather-app {
         width: 80%; 
         margin-bottom: 2rem;
     }
@@ -406,9 +423,15 @@ button i {
     }
 
     #about-me {
-        padding-top: 16rem;
+        padding-top: 17rem;
         margin-bottom: 5rem;
     }
+
+    .resume-link {
+    font-size: 0.95rem;
+    padding: 0.5rem 0.75rem;
+    }
+
 
     #title {
         font-size: 2.5rem;
@@ -441,7 +464,7 @@ button i {
         align-items: center;
     }
 
-    .todo-list, .rosebuds, .pianokeys {
+    .todo-list, .anime-tracker, .weather-app {
         width: 80%;
         margin-bottom: 2rem;
     }
@@ -457,6 +480,15 @@ button i {
 }
 
 @media screen and (max-width: 480px) {
+    .resume-link {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.5rem;
+    display: block;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    }
+
     nav {
         padding-top: 1rem;
         display: flex;
@@ -563,7 +595,7 @@ button i {
         align-items: center;
     }
 
-    .todo-list, .rosebuds, .pianokeys {
+    .todo-list, .anime-tracker, .weather-app {
         width: 90%;
         padding: 2rem;
         margin-bottom: 3rem;
@@ -571,8 +603,8 @@ button i {
     }
 
     .todo-list .project-description,
-    .rosebuds .project-description,
-    .pianokeys .project-description {
+    .anime-tracker .project-description,
+    .weather-app .project-description {
         word-wrap: break-word; 
         overflow: hidden; 
     }
